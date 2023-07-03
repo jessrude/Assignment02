@@ -11,7 +11,7 @@ while (validNumber == false) {
 userNumber = parseInt(userNumber);
 if (userNumber < 60) {
      console.log(`You received an F`);
- } else if (userNumber >= 60  && userName <= 69){
+ } else if (userNumber >= 60  && userName <= 69) {
      console.log(`You received a D`);
  } else if (userNumber >= 70 && userNumber <= 79) {
      console.log(`You received a C`);
