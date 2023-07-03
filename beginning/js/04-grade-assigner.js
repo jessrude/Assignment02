@@ -7,11 +7,11 @@ while (validNumber == false) {
        validNumber = false
        userNumber = prompt(`That number is not valid. Please pick a number between 1-100`);
      }
-    }
+}
 userNumber = parseInt(userNumber);
 if (userNumber < 60) {
      console.log(`You received an F`);
- } else if (userNumber >= 60  && userName <= 69) {
+ } else if (userNumber >= 60 && userNumber <= 69) {
      console.log(`You received a D`);
  } else if (userNumber >= 70 && userNumber <= 79) {
      console.log(`You received a C`);
