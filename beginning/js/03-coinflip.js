@@ -1,22 +1,15 @@
-function main(1) {
-    var n = Number(prompt("How many times do you want to flip the coin?")); // Gets the number of times to flip the coin.
-    var heads = 0, tails = 0; // Initiates the heads and tails variables.
-    for(var i = 0; i < n; i++) {
+alert(`Let\`s play rock, paper, scissors.`)
+let choice = prompt(`Enter your choice: rock, paper, or scissors.`)
+switch (choice) {
+     case `rock`:
+        console.log(`You chose rock!`)
+        break
+    case `paper`:
+       console.log (`You chose paper!`)
+       break
+    case `scissors`:
+        console.log(`You chose scissors!`)
+         break
 
-        // Uses the Math.random function to generate a random number.
-        // If the rand num is less than 1/2, it is classified as heads.
-        // Otherwise, the num is above 1/2 and is classified as tails.
-        if(Math.random(3) < 0.50) {
-            heads++;
-        } else {
-            tails++;
-        }
-
-        // Creates a borderless table to display the results of the coin flips.
-        document.getElementById("coinCount").innerHTML = 
-        "<table>"+
-            "<th>Heads</th><th>Tails</th><tr>"+ // Header Row
-            "<td>" + heads + "</td><td>" + tails + "</td></tr>"+ // Data Row
-        "</table>";
-    }
-}
+    default: 
+       console.log(`You didn\`t choose a valid option.`) }
