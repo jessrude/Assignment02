@@ -1,15 +1,20 @@
-alert(`Let\`s play rock, paper, scissors.`)
-let choice = prompt(`Enter your choice: rock, paper, or scissors.`)
-switch (choice) {
-     case `rock`:
-        console.log(`You chose rock!`)
-        break
-    case `paper`:
-       console.log (`You chose paper!`)
-       break
-    case `scissors`:
-        console.log(`You chose scissors!`)
-         break
+let randomNum = Math.round(Math.random(.5));
+let coinFlip = randomNum;
 
-    default: 
-       console.log(`You didn\`t choose a valid option.`) }
+alert(`Let\`s flip a coin.`)
+let choice = prompt(`Heads or tails?`)
+
+switch (choice) {
+    case `heads`:
+        console.log(`The flip was heads and you chose heads...you win!`)
+        break
+    case `tails`:
+       console.log (`The flip was heads but you chose tails...you lose!`)
+       break
+    case `heads`:
+        console.log(`The flip was tails but you chose heads...you lose!`)
+        break
+    case `tails`:
+       console.log (`The flip was tails and you chose tails...you win!`)
+       break
+}
